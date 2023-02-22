@@ -33,7 +33,71 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"name": "Registrar",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"usuario\": \"Santi\",\n    \"nombre\": \"Santiago\",\n    \"contraseña\": \"passwd\",\n    \"email\": \"mi@mail.uy\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5500/auth/registrar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5500",
+							"path": [
+								"auth",
+								"registrar"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "178"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"b2-dfIRT+dXMtwezjXFEf4wzOzQAS0\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 22 Feb 2023 18:57:14 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"nombre\": \"Santiago\",\n    \"contraseña\": \"$2b$08$zDLr2E0GdxXbBfqMyLiQxuERKfH8yOyOEsSvlGPfUtmZp.QLd5Kzi\",\n    \"email\": \"mi@mail.uy\",\n    \"usuario\": \"Santi\",\n    \"_id\": \"63f6658a33259575ffe564cc\",\n    \"__v\": 0\n}"
+				}
+			]
 		},
 		{
 			"name": "LOGIN",
@@ -72,7 +136,71 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"name": "LOGIN",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"usuario\": \"Santi\",\n    \"contraseña\": \"passwd\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5500/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5500",
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "396"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"18c-kFbKk1o775yDfm8cAkm05Y/v8rQ\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 22 Feb 2023 19:01:54 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"usuario\": {\n        \"_id\": \"63f6658a33259575ffe564cc\",\n        \"nombre\": \"Santiago\",\n        \"contraseña\": \"$2b$08$zDLr2E0GdxXbBfqMyLiQxuERKfH8yOyOEsSvlGPfUtmZp.QLd5Kzi\",\n        \"email\": \"mi@mail.uy\",\n        \"usuario\": \"Santi\",\n        \"__v\": 0\n    },\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZjY2NThhMzMyNTk1NzVmZmU1NjRjYyIsInVzdWFyaW8iOiJTYW50aSIsImlhdCI6MTY3NzA5MjUxNCwiZXhwIjoxNjc3MDk5NzE0fQ.3Fw8FWs7QZ0oxTai4Xj2GPoMn12jK7bASJ3asTauXYc\"\n}"
+				}
+			]
 		},
 		{
 			"name": "GET customers",
@@ -101,7 +229,61 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"name": "GET customers",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5500/customer",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5500",
+							"path": [
+								"customer"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "587"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"24b-1qWOyujqXfYpr7M8pv8+lRZ6BlA\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 22 Feb 2023 19:02:45 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"msg\": \"Customers\",\n    \"customers\": [\n        {\n            \"_id\": \"63f50e87565d5aa48155f805\",\n            \"nombre\": \"gabriela\",\n            \"contraseña\": \"$2b$08$1HwoCi7RqMivv9m9QE/YV.goqG41mN7/MeOLvXUGiLX2LJ1HYqhEC\",\n            \"email\": \"un@mail.uy\",\n            \"usuario\": \"lmssaddas\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"63f6392a3c3a7ec0d90db91c\",\n            \"nombre\": \"Jorge\",\n            \"usuario\": \"jorge22\"\n        },\n        {\n            \"_id\": \"63f6474f8e6f510304842dcc\",\n            \"contraseña\": \"supersecreta\",\n            \"usuario\": \"Rosa\",\n            \"email\": \"un@mail.uy\",\n            \"nombre\": \"Rosana\"\n        },\n        {\n            \"_id\": \"63f6658a33259575ffe564cc\",\n            \"nombre\": \"Santiago\",\n            \"contraseña\": \"$2b$08$zDLr2E0GdxXbBfqMyLiQxuERKfH8yOyOEsSvlGPfUtmZp.QLd5Kzi\",\n            \"email\": \"mi@mail.uy\",\n            \"usuario\": \"Santi\",\n            \"__v\": 0\n        }\n    ]\n}"
+				}
+			]
 		},
 		{
 			"name": "GET customer - por id",
@@ -131,7 +313,62 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"name": "GET customer - por id",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5500/customer/63f6474f8e6f510304842dcc",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5500",
+							"path": [
+								"customer",
+								"63f6474f8e6f510304842dcc"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "149"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"95-26tbIT8YVvAsb46pRyfyf2WPOx0\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 22 Feb 2023 19:03:30 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"msg\": \"Customer\",\n    \"customer\": {\n        \"_id\": \"63f6474f8e6f510304842dcc\",\n        \"contraseña\": \"supersecreta\",\n        \"usuario\": \"Rosa\",\n        \"email\": \"un@mail.uy\",\n        \"nombre\": \"Rosana\"\n    }\n}"
+				}
+			]
 		},
 		{
 			"name": "PUT customer - query id",
@@ -176,7 +413,77 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"name": "PUT customer - query id",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"usuario\": \"Santi\",\n    \"contraseña\": \"$2b$08$TZiIRQwiUYRVzZnex1J/M.ZgcyQLmh2PoqNUF6InmWRzrtRjsxIc2\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5500/customer/actualizar?customerID=63f6474f8e6f510304842dcc",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5500",
+							"path": [
+								"customer",
+								"actualizar"
+							],
+							"query": [
+								{
+									"key": "customerID",
+									"value": "63f6474f8e6f510304842dcc"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "182"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"b6-s4cABdarclnJrMPyCpHxAKKJoj0\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 22 Feb 2023 19:03:46 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"msg\": \"Customer actualizado\",\n    \"customerActualizado\": {\n        \"_id\": \"63f6474f8e6f510304842dcc\",\n        \"contraseña\": \"$2b$08$TZiIRQwiUYRVzZnex1J/M.ZgcyQLmh2PoqNUF6InmWRzrtRjsxIc2\",\n        \"usuario\": \"Santi\"\n    }\n}"
+				}
+			]
 		},
 		{
 			"name": "PATCH customer - query id",
@@ -221,7 +528,77 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"name": "PATCH customer - query id",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nombre\": \"Rosana\",\n    \"contraseña\": \"supersecreta\",\n    \"email\": \"un@mail.uy\",\n    \"usuario\": \"Rosa\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5500/customer/editar?customerID=63f6474f8e6f510304842dcc",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5500",
+							"path": [
+								"customer",
+								"editar"
+							],
+							"query": [
+								{
+									"key": "customerID",
+									"value": "63f6474f8e6f510304842dcc"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "168"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"a8-yn8751bca0zr6IrnHSgGnAQPEtk\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 22 Feb 2023 19:04:57 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"msg\": \"Customer actualizado\",\n    \"customerEditado\": {\n        \"_id\": \"63f6474f8e6f510304842dcc\",\n        \"contraseña\": \"supersecreta\",\n        \"usuario\": \"Rosa\",\n        \"email\": \"un@mail.uy\",\n        \"nombre\": \"Rosana\"\n    }\n}"
+				}
+			]
 		},
 		{
 			"name": "DELETE customer - query id",
@@ -266,7 +643,77 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"name": "DELETE customer - query id",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5500/customer/borrar?customerID=63f6474f8e6f510304842dcc",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5500",
+							"path": [
+								"customer",
+								"borrar"
+							],
+							"query": [
+								{
+									"key": "customerID",
+									"value": "63f6474f8e6f510304842dcc"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "164"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"a4-JzqssbbsQ7LibV5inXDDJmq1uw0\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 22 Feb 2023 19:06:08 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"msg\": \"Customer borrado\",\n    \"customerBorrado\": {\n        \"_id\": \"63f6474f8e6f510304842dcc\",\n        \"contraseña\": \"supersecreta\",\n        \"usuario\": \"Rosa\",\n        \"email\": \"un@mail.uy\",\n        \"nombre\": \"Rosana\"\n    }\n}"
+				}
+			]
 		},
 		{
 			"name": "GET invoices",
@@ -295,7 +742,61 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"name": "GET invoices",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5500/invoice",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5500",
+							"path": [
+								"invoice"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "135"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"87-MfABeq2LegMXycXSLOfqYtS+SU0\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 22 Feb 2023 19:07:06 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"msg\": \"invoices\",\n    \"invoices\": [\n        {\n            \"_id\": \"63f667cd33259575ffe564d6\",\n            \"numFactura\": 24,\n            \"fecha\": \"03/23\",\n            \"vence\": \"04/23\",\n            \"monto\": 1220,\n            \"__v\": 0\n        }\n    ]\n}"
+				}
+			]
 		},
 		{
 			"name": "GET invoice - por id",
@@ -325,7 +826,62 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"name": "GET invoice - por id",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5500/invoice/63f667cd33259575ffe564d6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5500",
+							"path": [
+								"invoice",
+								"63f667cd33259575ffe564d6"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "131"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"83-i/OPM5RwquneT0P5ri1xsjnKV+8\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 22 Feb 2023 19:08:01 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"msg\": \"invoice\",\n    \"invoice\": {\n        \"_id\": \"63f667cd33259575ffe564d6\",\n        \"numFactura\": 24,\n        \"fecha\": \"03/23\",\n        \"vence\": \"04/23\",\n        \"monto\": 1220,\n        \"__v\": 0\n    }\n}"
+				}
+			]
 		},
 		{
 			"name": "POST invoice",
@@ -364,7 +920,71 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"name": "POST invoice",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"numFactura\": 24,\n    \"fecha\": \"03/23\",\n    \"vence\": \"04/23\",\n    \"monto\": 1220\n}            ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5500/invoice/crear",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5500",
+							"path": [
+								"invoice",
+								"crear"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "144"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"90-r3+2MkeLxHT3o/w6eOY6etQ45GY\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 22 Feb 2023 19:06:53 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"msg\": \"invoice creado\",\n    \"invoiceCreado\": {\n        \"numFactura\": 24,\n        \"fecha\": \"03/23\",\n        \"vence\": \"04/23\",\n        \"monto\": 1220,\n        \"_id\": \"63f667cd33259575ffe564d6\",\n        \"__v\": 0\n    }\n}"
+				}
+			]
 		},
 		{
 			"name": "PUT invoice - query id",
@@ -409,7 +1029,77 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"name": "PUT invoice - query id",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"monto\": 12420\n}    ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5500/invoice/actualizar?invoiceID=63f6685733259575ffe564dd",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5500",
+							"path": [
+								"invoice",
+								"actualizar"
+							],
+							"query": [
+								{
+									"key": "invoiceID",
+									"value": "63f6685733259575ffe564dd"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "99"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"63-lO3yBZRztaE4HZcOBetkdqZ6RYU\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 22 Feb 2023 19:09:35 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"msg\": \"invoice actualizado\",\n    \"invoiceActualizado\": {\n        \"_id\": \"63f6685733259575ffe564dd\",\n        \"monto\": 12420\n    }\n}"
+				}
+			]
 		},
 		{
 			"name": "PATCH invoice - query id",
@@ -454,7 +1144,77 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"name": "PATCH invoice - query id",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"numFactura\": 25,\n    \"fecha\": \"05/23\",\n    \"vence\": \"06/23\",\n    \"monto\": 2120\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5500/invoice/editar?invoiceID=63f6685733259575ffe564dd",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5500",
+							"path": [
+								"invoice",
+								"editar"
+							],
+							"query": [
+								{
+									"key": "invoiceID",
+									"value": "63f6685733259575ffe564dd"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "142"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"8e-0SjLBiL5PViOOHpL4JAY8Qk8lTU\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 22 Feb 2023 19:12:29 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"msg\": \"invoice actualizado\",\n    \"invoiceEditado\": {\n        \"_id\": \"63f6685733259575ffe564dd\",\n        \"monto\": 2120,\n        \"fecha\": \"05/23\",\n        \"numFactura\": 25,\n        \"vence\": \"06/23\"\n    }\n}"
+				}
+			]
 		},
 		{
 			"name": "DELETE invoice - query id",
@@ -499,7 +1259,77 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"name": "DELETE invoice - query id",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5500/invoice/borrar?invoiceID=63f6685733259575ffe564dd",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5500",
+							"path": [
+								"invoice",
+								"borrar"
+							],
+							"query": [
+								{
+									"key": "invoiceID",
+									"value": "63f6685733259575ffe564dd"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "138"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"8a-P7IolQZbbOYYtMDL9+MyJwWILm4\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 22 Feb 2023 19:12:43 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"msg\": \"invoice borrado\",\n    \"invoiceBorrado\": {\n        \"_id\": \"63f6685733259575ffe564dd\",\n        \"monto\": 2120,\n        \"fecha\": \"05/23\",\n        \"numFactura\": 25,\n        \"vence\": \"06/23\"\n    }\n}"
+				}
+			]
 		}
 	]
 }
