@@ -18,7 +18,7 @@ export class EditarCustomerDto {
  
   @IsOptional()
   @IsString()
-  contraseña?: string;
+  contrasena?: string;
  
   @IsOptional()
   @IsString()

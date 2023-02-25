@@ -14,7 +14,7 @@ export class CustomerDto {
 
     @IsNotEmpty()
     @IsString()
-    contraseña: string;
+    contrasena: string;
     
     @IsString()
     usuario: string;

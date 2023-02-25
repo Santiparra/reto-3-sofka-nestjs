@@ -15,20 +15,20 @@ export class AuthService {
         ) {}
   
     async registrar (customerDto: CustomerDto): Promise<Customer> {
-        const { contraseña } = customerDto;
-        const hashear = await bcrypt.hash(contraseña, 8);
-        customerDto = {...customerDto, contraseña: hashear}
+        const { contrasena } = customerDto;
+        const hashear = await bcrypt.hash(contrasena, 8);
+        customerDto = {...customerDto, contrasena: hashear}
         const customer = new this.customerModel(customerDto);
         await customer.save();
         return customer
     }
 
     async login (customerDto: LoginAuthDto) {
-        const { usuario, contraseña } = customerDto
+        const { usuario, contrasena } = customerDto
         const customer = await this.customerModel.findOne({ usuario });
         if (!customer) throw new NotFoundException("El customer no existe");        
-        const validar = await bcrypt.compare(contraseña, customer.contraseña);
-        if (!validar) throw new HttpException("contraseña incorrecta", 403);
+        const validar = await bcrypt.compare(contrasena, customer.contrasena);
+        if (!validar) throw new HttpException("contrasena incorrecta", 403);
         const payload = {id:customer._id, usuario: customer.usuario};
         const token = this.jwtService.sign(payload);
         const datos = { usuario: customer, token };

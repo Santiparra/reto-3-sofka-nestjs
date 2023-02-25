@@ -31,7 +31,7 @@ export class CustomerService {
         .setOptions({ overwrite: true, new: true })
         .populate("nombre")
         .populate("email")
-        .populate("contraseña")
+        .populate("contrasena")
         .populate("usuario");
         if (!customerActualizado) {
             throw new NotFoundException();

@@ -10,7 +10,7 @@ export class Customers {
     nombre: string;
 
     @Prop()
-    contraseña: string;
+    contrasena: string;
 
     @Prop()
     email: string;

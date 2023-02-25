@@ -25,12 +25,12 @@ import { CustomerService } from '../services/customer.service';
 export class CustomerController {
     constructor (private customerService: CustomerService) {}
 
-    @UseGuards(JwtAuthGuard)
+    /* @UseGuards(JwtAuthGuard) */
     @Get("/")
     async buscarCustomers(@Res() res) {
       const customers = await this.customerService.buscarCustomers();
       if (!customers) throw new NotFoundException("La base de datos esta vacia"); 
-      res.status(HttpStatus.OK).json({ msg: "Customers", customers });
+      res.status(HttpStatus.OK).json( customers );
       return customers
     }
 
@@ -39,7 +39,7 @@ export class CustomerController {
     async buscarCustomer(@Param("customerID") customerID, @Res() res) {
       const customer = await this.customerService.buscarCustomer(customerID);
       if (!customer) throw new NotFoundException("Customer no encontrado");      
-      return res.status(HttpStatus.OK).json({ msg: "Customer", customer });      
+      return res.status(HttpStatus.OK).json( customer );      
     }
     
     @UseGuards(JwtAuthGuard)
