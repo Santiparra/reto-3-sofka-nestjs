@@ -34,7 +34,7 @@ export class CustomerController {
       return customers
     }
 
-    @UseGuards(JwtAuthGuard)
+    /* @UseGuards(JwtAuthGuard) */
     @Get("/:customerID")
     async buscarCustomer(@Param("customerID") customerID, @Res() res) {
       const customer = await this.customerService.buscarCustomer(customerID);
@@ -42,7 +42,7 @@ export class CustomerController {
       return res.status(HttpStatus.OK).json( customer );      
     }
     
-    @UseGuards(JwtAuthGuard)
+    /* @UseGuards(JwtAuthGuard) */
     @Patch("/editar")
     async editarCustomer(@Res() res, @Body() customerDto: EditarCustomerDto, @Query("customerID") customerID) {
       const customerEditado = await this.customerService.editarCustomer(customerID, customerDto);
@@ -50,7 +50,7 @@ export class CustomerController {
       return res.status(HttpStatus.OK).json({ msg: "Customer actualizado", customerEditado });
     }
 
-    @UseGuards(JwtAuthGuard)
+    /* @UseGuards(JwtAuthGuard) */
     @Put("/actualizar")
     async actualizarCustomer(@Res() res, @Body() customerDto: EditarCustomerDto, @Query("customerID") customerID) {
       const customerActualizado = await this.customerService.actualizarCustomer(customerID, customerDto);
@@ -58,7 +58,7 @@ export class CustomerController {
       return res.status(HttpStatus.OK).json({ msg: "Customer actualizado", customerActualizado });
     }
 
-    @UseGuards(JwtAuthGuard)
+    /* @UseGuards(JwtAuthGuard) */
     @Delete("/borrar")
     async borrarCustomer (@Res() res, @Query("customerID") customerID) {
       const customerBorrado = await this.customerService.borrarCustomer(customerID);
