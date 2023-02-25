@@ -1,0 +1,33 @@
+<div *ngFor="let customer of customers" class="card card-body mb-3">
+    <div class="row">
+        <div class="col-md-8">
+            <ul>
+                <li>
+                    id: {{ customer._id }}
+                </li>
+                <li>
+                    nombre: {{ customer.nombre }}
+                </li>
+                <li>
+                    usuario: {{ customer.usuario }}
+                </li>
+                <li>
+                    email: {{ customer.email }}
+                </li>
+                <li>
+                    contraseña: {{ customer.contrasena }}
+                </li>
+            </ul>
+            <button 
+                class="btn btn-danger"
+                (click)="borrarCustomer(customer._id)">
+                Borrar
+            </button> 
+            <button 
+            class="btn btn-secondary" 
+            [routerLink]="['/customer/editar', customer._id]">
+            Editar
+        </button>
+        </div>
+    </div>
+</div>

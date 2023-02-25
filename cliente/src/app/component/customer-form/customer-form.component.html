@@ -1,0 +1,40 @@
+<div class="row">
+    <div class="col-sm-4 offset-md-4">
+        <div class="card card-body">
+            <form (submit)=" edicion ? editarCustomer() : submitCustomer()">
+                <div class="form-group">
+                    <input type="text" 
+                    class="form-control"
+                    name="name"
+                    placeholder="Nombre del Customer" 
+                    [(ngModel)]="customer.nombre"
+                    autofocus>
+                </div>
+                <div class="form-group">
+                    <input type="text"
+                    name="usuario" 
+                    class="form-control"
+                    placeholder="Nombre de usuario del Customer" 
+                    [(ngModel)]="customer.usuario">
+                </div>
+                <div class="form-group">
+                    <input type="email"
+                    name="email" 
+                    class="form-control"
+                    placeholder="Email del Customer" 
+                    [(ngModel)]="customer.email">
+                </div>
+                <div class="form-group">
+                    <input type="text"
+                    name="contraseña" 
+                    class="form-control"
+                    placeholder="contraseña del Customer" 
+                    [(ngModel)]="customer.contrasena">
+                </div>
+                <button class="btn btn-dark btn-block">
+                    Guardar
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
