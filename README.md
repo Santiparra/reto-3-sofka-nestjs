@@ -1,6 +1,6 @@
 # reto-3-sofka-nestjs
 
-NOTA IMPORTANTE:
+## NOTA IMPORTANTE:
 
 El proyecto cuenta con 3 ramas que se detallan a continuacion; la version final para presentar la respuesta al reto comprende la rama version-array la cual hice la rama default.
 
