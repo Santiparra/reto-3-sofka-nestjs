@@ -1,7 +1,7 @@
 import { Controller, Get, Post, UseGuards, Request, Logger } from '@nestjs/common';
-import { AuthService } from './auth.service';
-import { AuthenticatedGuard } from './guards/authenticated.guard';
-import { LocalAuthGuard } from './guards/local-auth.guard';
+import { AuthenticatedGuard } from '../guards/authenticated.guard';
+import { LocalAuthGuard } from '../guards/local-auth.guard';
+import { AuthService } from '../services/auth.service';
 
 @Controller('auth')
 export class AuthController {
@@ -16,7 +16,7 @@ export class AuthController {
     return {msg: "logged in"};
   }
     
-  //ruta dev, borrar en entrega
+  //ruta de testeo del serializer
   @UseGuards(AuthenticatedGuard)
   @Get()
   myMetadataHeaderInfo(@Request() req) {

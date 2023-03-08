@@ -1,0 +1,1238 @@
+{
+	"info": {
+		"_postman_id": "f89f65ec-3858-4a84-bc72-7d83b92e6602",
+		"name": "Reto Sofka 3 V3",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25929179"
+	},
+	"item": [
+		{
+			"name": "LOGIN",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"Geo\",\n    \"password\": \"password\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "LOGIN",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"Geo\",\n    \"password\": \"password\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "X-Correlation-Id",
+							"value": "653f9f4f-ded1-48ac-9a1e-0449a73c223b"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "19"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"13-TZ7CAHK2t7TTU9zcvr0fuRfxO3Y\""
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "connect.sid=s%3AmoRcH7-gfAvalnN4e32QUdjA-3Y6yLHY.8kRyZn7PkhRpranLVnnVEZYRxI8zcjy%2Ft4Es3dkjjrs; Path=/; Expires=Wed, 08 Mar 2023 15:57:51 GMT; HttpOnly"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 08 Mar 2023 14:57:51 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"msg\": \"logged in\"\n}"
+				}
+			]
+		},
+		{
+			"name": "SEED customers",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/customer/10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"customer",
+						"10"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "SEED customers",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/customer/10",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"customer",
+								"10"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "X-Correlation-Id",
+							"value": "de2f7814-4c04-4599-a9b1-f71b6e7335c9"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1766"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"6e6-3vVFTBmps429TBnmsMCRqccA/Qo\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 08 Mar 2023 14:59:19 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 0,\n        \"name\": \"Georgina\",\n        \"userName\": \"Geo\",\n        \"email\": \"laGeo@mail.com\",\n        \"password\": \"password\",\n        \"roles\": [\n            \"ADMIN\"\n        ]\n    },\n    {\n        \"id\": 1,\n        \"name\": \"Jorge\",\n        \"userName\": \"ElJorge\",\n        \"email\": \"Jorgito@mail.com\",\n        \"password\": \"password\",\n        \"roles\": [\n            \"ADMIN\"\n        ]\n    },\n    {\n        \"id\": 2,\n        \"name\": \"Valentin\",\n        \"userName\": \"Tin\",\n        \"email\": \"Valentin@mail.com\",\n        \"password\": \"password\",\n        \"roles\": [\n            \"ADMIN\"\n        ]\n    },\n    {\n        \"id\": 69998,\n        \"name\": \"Lillian McClure\",\n        \"userName\": \"Coralie48\",\n        \"email\": \"Jairo_Jacobs@gmail.com\",\n        \"password\": \"DKml8KJgTfm3lCX\",\n        \"roles\": [\n            \"USER\"\n        ]\n    },\n    {\n        \"id\": 81757,\n        \"name\": \"Verna McDermott\",\n        \"userName\": \"Jaquelin16\",\n        \"email\": \"Jaunita69@yahoo.com\",\n        \"password\": \"5twmqBb5JDAfeRS\",\n        \"roles\": [\n            \"USER\"\n        ]\n    },\n    {\n        \"id\": 9050,\n        \"name\": \"Miguel Toy\",\n        \"userName\": \"Rudy72\",\n        \"email\": \"Waldo.Mueller98@yahoo.com\",\n        \"password\": \"9eJJCfyOfuLGqQc\",\n        \"roles\": [\n            \"USER\"\n        ]\n    },\n    {\n        \"id\": 24938,\n        \"name\": \"Allison Casper\",\n        \"userName\": \"Haven_Prohaska\",\n        \"email\": \"Adeline_Quigley92@gmail.com\",\n        \"password\": \"MmwZ3aDpcneRzfh\",\n        \"roles\": [\n            \"USER\"\n        ]\n    },\n    {\n        \"id\": 63426,\n        \"name\": \"Shelia Ondricka\",\n        \"userName\": \"Donavon.Hane21\",\n        \"email\": \"Kelvin20@yahoo.com\",\n        \"password\": \"NxOmcY7oP1G1kbb\",\n        \"roles\": [\n            \"USER\"\n        ]\n    },\n    {\n        \"id\": 31008,\n        \"name\": \"Guadalupe Muller\",\n        \"userName\": \"Abigail91\",\n        \"email\": \"Stone70@yahoo.com\",\n        \"password\": \"iVR5e_D74NCuYdd\",\n        \"roles\": [\n            \"USER\"\n        ]\n    },\n    {\n        \"id\": 47634,\n        \"name\": \"Johnnie Hilll\",\n        \"userName\": \"Meagan_Oberbrunner\",\n        \"email\": \"Kristin.Stokes54@hotmail.com\",\n        \"password\": \"p50nRM5PhmPFK93\",\n        \"roles\": [\n            \"USER\"\n        ]\n    },\n    {\n        \"id\": 48678,\n        \"name\": \"Francisco Koepp\",\n        \"userName\": \"Rowan_Spinka34\",\n        \"email\": \"Bradly_Murray1@hotmail.com\",\n        \"password\": \"A1Gyk5sntX3kwC6\",\n        \"roles\": [\n            \"USER\"\n        ]\n    },\n    {\n        \"id\": 4527,\n        \"name\": \"Virginia Leuschke III\",\n        \"userName\": \"Carolyne5\",\n        \"email\": \"Lea.Walter89@hotmail.com\",\n        \"password\": \"lvSfaqxbHEN4p3z\",\n        \"roles\": [\n            \"USER\"\n        ]\n    },\n    {\n        \"id\": 65251,\n        \"name\": \"Darin Mosciski\",\n        \"userName\": \"Alayna_Reinger49\",\n        \"email\": \"Seth.Corwin@yahoo.com\",\n        \"password\": \"D3hXSkh_DGI5f9m\",\n        \"roles\": [\n            \"USER\"\n        ]\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "GET customers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/customer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"customer"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GET customers",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/customer",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"customer"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "X-Correlation-Id",
+							"value": "1e3218b8-897b-4c7a-9ddb-9f6baadea449"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1799"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"707-AjaAI9SC+M+lM9HQaFN1/enLn2s\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 08 Mar 2023 15:00:57 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"msg\": \"Customers:\",\n    \"customers\": [\n        {\n            \"id\": 0,\n            \"name\": \"Georgina\",\n            \"userName\": \"Geo\",\n            \"email\": \"laGeo@mail.com\",\n            \"password\": \"password\",\n            \"roles\": [\n                \"ADMIN\"\n            ]\n        },\n        {\n            \"id\": 1,\n            \"name\": \"Jorge\",\n            \"userName\": \"ElJorge\",\n            \"email\": \"Jorgito@mail.com\",\n            \"password\": \"password\",\n            \"roles\": [\n                \"ADMIN\"\n            ]\n        },\n        {\n            \"id\": 2,\n            \"name\": \"Valentin\",\n            \"userName\": \"Tin\",\n            \"email\": \"Valentin@mail.com\",\n            \"password\": \"password\",\n            \"roles\": [\n                \"ADMIN\"\n            ]\n        },\n        {\n            \"id\": 69998,\n            \"name\": \"Lillian McClure\",\n            \"userName\": \"Coralie48\",\n            \"email\": \"Jairo_Jacobs@gmail.com\",\n            \"password\": \"DKml8KJgTfm3lCX\",\n            \"roles\": [\n                \"USER\"\n            ]\n        },\n        {\n            \"id\": 81757,\n            \"name\": \"Verna McDermott\",\n            \"userName\": \"Jaquelin16\",\n            \"email\": \"Jaunita69@yahoo.com\",\n            \"password\": \"5twmqBb5JDAfeRS\",\n            \"roles\": [\n                \"USER\"\n            ]\n        },\n        {\n            \"id\": 9050,\n            \"name\": \"Miguel Toy\",\n            \"userName\": \"Rudy72\",\n            \"email\": \"Waldo.Mueller98@yahoo.com\",\n            \"password\": \"9eJJCfyOfuLGqQc\",\n            \"roles\": [\n                \"USER\"\n            ]\n        },\n        {\n            \"id\": 24938,\n            \"name\": \"Allison Casper\",\n            \"userName\": \"Haven_Prohaska\",\n            \"email\": \"Adeline_Quigley92@gmail.com\",\n            \"password\": \"MmwZ3aDpcneRzfh\",\n            \"roles\": [\n                \"USER\"\n            ]\n        },\n        {\n            \"id\": 63426,\n            \"name\": \"Shelia Ondricka\",\n            \"userName\": \"Donavon.Hane21\",\n            \"email\": \"Kelvin20@yahoo.com\",\n            \"password\": \"NxOmcY7oP1G1kbb\",\n            \"roles\": [\n                \"USER\"\n            ]\n        },\n        {\n            \"id\": 31008,\n            \"name\": \"Guadalupe Muller\",\n            \"userName\": \"Abigail91\",\n            \"email\": \"Stone70@yahoo.com\",\n            \"password\": \"iVR5e_D74NCuYdd\",\n            \"roles\": [\n                \"USER\"\n            ]\n        },\n        {\n            \"id\": 47634,\n            \"name\": \"Johnnie Hilll\",\n            \"userName\": \"Meagan_Oberbrunner\",\n            \"email\": \"Kristin.Stokes54@hotmail.com\",\n            \"password\": \"p50nRM5PhmPFK93\",\n            \"roles\": [\n                \"USER\"\n            ]\n        },\n        {\n            \"id\": 48678,\n            \"name\": \"Francisco Koepp\",\n            \"userName\": \"Rowan_Spinka34\",\n            \"email\": \"Bradly_Murray1@hotmail.com\",\n            \"password\": \"A1Gyk5sntX3kwC6\",\n            \"roles\": [\n                \"USER\"\n            ]\n        },\n        {\n            \"id\": 4527,\n            \"name\": \"Virginia Leuschke III\",\n            \"userName\": \"Carolyne5\",\n            \"email\": \"Lea.Walter89@hotmail.com\",\n            \"password\": \"lvSfaqxbHEN4p3z\",\n            \"roles\": [\n                \"USER\"\n            ]\n        },\n        {\n            \"id\": 65251,\n            \"name\": \"Darin Mosciski\",\n            \"userName\": \"Alayna_Reinger49\",\n            \"email\": \"Seth.Corwin@yahoo.com\",\n            \"password\": \"D3hXSkh_DGI5f9m\",\n            \"roles\": [\n                \"USER\"\n            ]\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "GET Customer por ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/customer/69998",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"customer",
+						"69998"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GET Customer por ID",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/customer/69998",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"customer",
+								"69998"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "X-Correlation-Id",
+							"value": "a3206f2b-db06-45f8-a847-df44b0902ad1"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "170"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"aa-3HOZAOTYlH4UFZ1445DY/D3jSNo\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 08 Mar 2023 15:01:37 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"msg\": \"Customer:\",\n    \"customer\": {\n        \"id\": 69998,\n        \"name\": \"Lillian McClure\",\n        \"userName\": \"Coralie48\",\n        \"email\": \"Jairo_Jacobs@gmail.com\",\n        \"password\": \"DKml8KJgTfm3lCX\",\n        \"roles\": [\n            \"USER\"\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "POST - crear customer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Troy McClure\",\n    \"userName\": \"troy\",\n    \"email\": \"tmclur@gmail.com\",\n    \"password\": \"password1243\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/customer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"customer"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "POST - crear customer",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Troy McClure\",\n    \"userName\": \"troy\",\n    \"email\": \"tmclur@gmail.com\",\n    \"password\": \"password1243\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/customer",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"customer"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "X-Correlation-Id",
+							"value": "9c5bb3a2-fd1b-4697-8671-cf3533d3a6cc"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "223"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"df-E0yuJlmtRbZjsWQTd47ZBHnip28\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 08 Mar 2023 15:05:50 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"msg\": \"Customer creado con éxito:\",\n    \"createdCustomer\": {\n        \"id\": 74,\n        \"name\": \"Troy McClure\",\n        \"userName\": \"troy\",\n        \"email\": \"tmclur@gmail.com\",\n        \"password\": \"$2b$10$HJF534Wg9gAQrGA3b9DQQe9NObjcrZB8F/FwxF62ez/WtXxO13WFW\",\n        \"roles\": [\n            \"USER\"\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "PUT customer",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\": \"otro nombre\",\n        \"userName\": \"otrousuario\",\n        \"email\": \"otromail@gmail.com\",\n        \"password\": \"password1234\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/customer/69998",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"customer",
+						"69998"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "PUT customer",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"name\": \"otro nombre\",\n        \"userName\": \"otrousuario\",\n        \"email\": \"otromail@gmail.com\",\n        \"password\": \"password1234\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/customer/69998",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"customer",
+								"69998"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "X-Correlation-Id",
+							"value": "4328f222-0755-4c48-b28e-4f8c8d48b6cd"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "250"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"fa-rUdTCpu3SlzszCm4/M9/9M56UuM\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 08 Mar 2023 15:09:34 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"msg\": \"Customer actualizado o editado con éxito:\",\n    \"replacedCustomer\": {\n        \"id\": 69998,\n        \"name\": \"otro nombre\",\n        \"userName\": \"otrousuario\",\n        \"email\": \"otromail@gmail.com\",\n        \"password\": \"$2b$10$ymTduFlXAi6nbSG4FOrhJ.hchA7VhnkQeb.Ex8yRb1bdb4eNtZ3VC\",\n        \"roles\": [\n            \"USER\"\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "PATCH customer",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\": \"Laura\",\n        \"userName\": \"Aitken\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/customer/69998",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"customer",
+						"69998"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "PATCH customer",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"name\": \"Laura\",\n        \"userName\": \"Aitken\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/customer/69998",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"customer",
+								"69998"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "X-Correlation-Id",
+							"value": "6e95f4a9-7d8a-46d0-bb82-9d696b1212df"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "223"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"df-5e7ThyEt4WskNN8YBAJvZXVMX3w\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 08 Mar 2023 15:11:22 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"msg\": \"Customer editado con éxito:\",\n    \"editedCustomer\": {\n        \"id\": 69998,\n        \"name\": \"Laura\",\n        \"userName\": \"Aitken\",\n        \"email\": \"otromail@gmail.com\",\n        \"password\": \"$2b$10$ymTduFlXAi6nbSG4FOrhJ.hchA7VhnkQeb.Ex8yRb1bdb4eNtZ3VC\",\n        \"roles\": [\n            \"USER\"\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "DELETE customer",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/customer/69998",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"customer",
+						"69998"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "DELETE customer",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/customer/69998",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"customer",
+								"69998"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "X-Correlation-Id",
+							"value": "8a0c1cff-5506-4298-bc8f-67af5ffbabe2"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1873"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"751-SXn6OgfMHHiZ9plcAW2SenF8oOc\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 08 Mar 2023 15:12:39 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"msg\": \"El Customer ya no se encuentra en la base de datos\",\n    \"deletedCustomer\": [\n        {\n            \"id\": 0,\n            \"name\": \"Georgina\",\n            \"userName\": \"Geo\",\n            \"email\": \"laGeo@mail.com\",\n            \"password\": \"password\",\n            \"roles\": [\n                \"ADMIN\"\n            ]\n        },\n        {\n            \"id\": 1,\n            \"name\": \"Jorge\",\n            \"userName\": \"ElJorge\",\n            \"email\": \"Jorgito@mail.com\",\n            \"password\": \"password\",\n            \"roles\": [\n                \"ADMIN\"\n            ]\n        },\n        {\n            \"id\": 2,\n            \"name\": \"Valentin\",\n            \"userName\": \"Tin\",\n            \"email\": \"Valentin@mail.com\",\n            \"password\": \"password\",\n            \"roles\": [\n                \"ADMIN\"\n            ]\n        },\n        {\n            \"id\": 81757,\n            \"name\": \"Verna McDermott\",\n            \"userName\": \"Jaquelin16\",\n            \"email\": \"Jaunita69@yahoo.com\",\n            \"password\": \"5twmqBb5JDAfeRS\",\n            \"roles\": [\n                \"USER\"\n            ]\n        },\n        {\n            \"id\": 9050,\n            \"name\": \"Miguel Toy\",\n            \"userName\": \"Rudy72\",\n            \"email\": \"Waldo.Mueller98@yahoo.com\",\n            \"password\": \"9eJJCfyOfuLGqQc\",\n            \"roles\": [\n                \"USER\"\n            ]\n        },\n        {\n            \"id\": 24938,\n            \"name\": \"Allison Casper\",\n            \"userName\": \"Haven_Prohaska\",\n            \"email\": \"Adeline_Quigley92@gmail.com\",\n            \"password\": \"MmwZ3aDpcneRzfh\",\n            \"roles\": [\n                \"USER\"\n            ]\n        },\n        {\n            \"id\": 63426,\n            \"name\": \"Shelia Ondricka\",\n            \"userName\": \"Donavon.Hane21\",\n            \"email\": \"Kelvin20@yahoo.com\",\n            \"password\": \"NxOmcY7oP1G1kbb\",\n            \"roles\": [\n                \"USER\"\n            ]\n        },\n        {\n            \"id\": 31008,\n            \"name\": \"Guadalupe Muller\",\n            \"userName\": \"Abigail91\",\n            \"email\": \"Stone70@yahoo.com\",\n            \"password\": \"iVR5e_D74NCuYdd\",\n            \"roles\": [\n                \"USER\"\n            ]\n        },\n        {\n            \"id\": 47634,\n            \"name\": \"Johnnie Hilll\",\n            \"userName\": \"Meagan_Oberbrunner\",\n            \"email\": \"Kristin.Stokes54@hotmail.com\",\n            \"password\": \"p50nRM5PhmPFK93\",\n            \"roles\": [\n                \"USER\"\n            ]\n        },\n        {\n            \"id\": 48678,\n            \"name\": \"Francisco Koepp\",\n            \"userName\": \"Rowan_Spinka34\",\n            \"email\": \"Bradly_Murray1@hotmail.com\",\n            \"password\": \"A1Gyk5sntX3kwC6\",\n            \"roles\": [\n                \"USER\"\n            ]\n        },\n        {\n            \"id\": 4527,\n            \"name\": \"Virginia Leuschke III\",\n            \"userName\": \"Carolyne5\",\n            \"email\": \"Lea.Walter89@hotmail.com\",\n            \"password\": \"lvSfaqxbHEN4p3z\",\n            \"roles\": [\n                \"USER\"\n            ]\n        },\n        {\n            \"id\": 65251,\n            \"name\": \"Darin Mosciski\",\n            \"userName\": \"Alayna_Reinger49\",\n            \"email\": \"Seth.Corwin@yahoo.com\",\n            \"password\": \"D3hXSkh_DGI5f9m\",\n            \"roles\": [\n                \"USER\"\n            ]\n        },\n        {\n            \"id\": 74,\n            \"name\": \"Troy McClure\",\n            \"userName\": \"troy\",\n            \"email\": \"tmclur@gmail.com\",\n            \"password\": \"$2b$10$HJF534Wg9gAQrGA3b9DQQe9NObjcrZB8F/FwxF62ez/WtXxO13WFW\",\n            \"roles\": [\n                \"USER\"\n            ]\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "GET invoices",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/invoices",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"invoices"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GET invoices",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/invoices",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"invoices"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "X-Correlation-Id",
+							"value": "8c62cdc8-565b-4cc8-b911-283bc63302c9"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "247"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"f7-6ZDh6BTV/LyFfKn/vllJt1a9dGQ\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 08 Mar 2023 15:13:58 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"msg\": \"Invoices:\",\n    \"invoices\": [\n        {\n            \"numFactura\": 0,\n            \"fecha\": \"02-02-2023\",\n            \"vence\": \"02-03-2023\",\n            \"monto\": 123\n        },\n        {\n            \"numFactura\": 1,\n            \"fecha\": \"02-01-2023\",\n            \"vence\": \"02-02-2023\",\n            \"monto\": 1900\n        },\n        {\n            \"numFactura\": 2,\n            \"fecha\": \"02-03-2023\",\n            \"vence\": \"02-04-2023\",\n            \"monto\": 1100\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "GET invoice por Numero de Factura",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/invoices/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"invoices",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GET invoice por Numero de Factura",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/invoices/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"invoices",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "X-Correlation-Id",
+							"value": "069594b4-c024-4c99-9fd5-9a9a6e7c10e2"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "71"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"47-Du9WDIpc8tihiuLUl1qmm+aR66E\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 08 Mar 2023 15:17:01 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"numFactura\": 1,\n    \"fecha\": \"02-01-2023\",\n    \"vence\": \"02-02-2023\",\n    \"monto\": 1900\n}"
+				}
+			]
+		},
+		{
+			"name": "POST crear invoice",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n            \"fecha\": \"02-04-2023\",\n            \"vence\": \"02-05-2023\",\n            \"monto\": 1258\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/invoices",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"invoices"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "POST crear invoice",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n            \"fecha\": \"02-04-2023\",\n            \"vence\": \"02-05-2023\",\n            \"monto\": 1258\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/invoices",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"invoices"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "X-Correlation-Id",
+							"value": "abb1193b-c423-4374-a972-0474e5066b9b"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "126"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"7e-qp+49VSKsQ2g8biQC4wpcjtr8e0\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 08 Mar 2023 15:54:58 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"msg\": \"Invoice creado con éxito:\",\n    \"createdInvoice\": {\n        \"fecha\": \"02-04-2023\",\n        \"vence\": \"02-05-2023\",\n        \"monto\": 1258,\n        \"numFactura\": 83\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "PUT invoice",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n            \"fecha\": \"02-04-2023\",\n            \"vence\": \"02-05-2023\",\n            \"monto\": 1581\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/invoices/83",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"invoices",
+						"83"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "PUT invoice",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n            \"fecha\": \"02-04-2023\",\n            \"vence\": \"02-05-2023\",\n            \"monto\": 1581\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/invoices/83",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"invoices",
+								"83"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "X-Correlation-Id",
+							"value": "546c9291-abe3-48f5-9748-bd3bb7057594"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "142"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"8e-R7LHvy4nWW89d3Y1SedqOopxkdA\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 08 Mar 2023 15:55:58 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"msg\": \"Invoice actualizado o editado con éxito:\",\n    \"replacedInvoice\": {\n        \"fecha\": \"02-04-2023\",\n        \"vence\": \"02-05-2023\",\n        \"monto\": 1581,\n        \"numFactura\": 83\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "PATCH invoice",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"monto\": 587\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/invoices/83",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"invoices",
+						"83"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "PATCH invoice",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"monto\": 587\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/invoices/83",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"invoices",
+								"83"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "X-Correlation-Id",
+							"value": "6b4beff2-9a66-47a3-a438-7f45992527ae"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "125"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"7d-PEDgPMpOroJ7D4UeAmGcqG4OFbY\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 08 Mar 2023 15:57:06 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"msg\": \"Invoice editado con éxito:\",\n    \"editedInvoice\": {\n        \"fecha\": \"02-04-2023\",\n        \"vence\": \"02-05-2023\",\n        \"monto\": 587,\n        \"numFactura\": 83\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "DELETE invoice",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/invoices/83",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"invoices",
+						"83"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "DELETE invoice",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/invoices/83",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"invoices",
+								"83"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "X-Correlation-Id",
+							"value": "b18aa103-01a3-4cbf-a56d-03aa4b0ab50c"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "293"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"125-Ib8QGsG7SElw5vs0rauKqzYrsV0\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 08 Mar 2023 15:57:36 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"msg\": \"El Invoice ya no se encuentra en la base de datos\",\n    \"deletedInvoice\": [\n        {\n            \"numFactura\": 0,\n            \"fecha\": \"02-02-2023\",\n            \"vence\": \"02-03-2023\",\n            \"monto\": 123\n        },\n        {\n            \"numFactura\": 1,\n            \"fecha\": \"02-01-2023\",\n            \"vence\": \"02-02-2023\",\n            \"monto\": 1900\n        },\n        {\n            \"numFactura\": 2,\n            \"fecha\": \"02-03-2023\",\n            \"vence\": \"02-04-2023\",\n            \"monto\": 1100\n        }\n    ]\n}"
+				}
+			]
+		}
+	]
+}
