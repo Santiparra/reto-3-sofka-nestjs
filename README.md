@@ -11,20 +11,25 @@ El proyecto cuenta con 3 ramas que se detallan a continuacion; la version final 
 -La Rama FRONTEND cuenta con el backend realizada en la rama main más una capa de front realizada con Angular (de momento basica, es solo a modo de practicar conceptos de angular).
 
 
-##VERSION ARRAY
+## VERSION ARRAY
 
 Caracteristicas:
 
-Pipes => validation (scope => local) class-validator, ParseInt
+#####Pipes 
+       => validation (scope => local) class-validator, ParseInt
 
-Guards => Autentificacion =>passport local y sesiones-express
+#####Guards 
+       => Autentificacion =>passport local y sesiones-express
        => Autorizacion    => RBAC Roles (decorador custom para setMetadata)
 
-Herramientas => Hashing => bcrypt
+#####Herramientas 
+             => Hashing => bcrypt
              => Session Serializer (solo id + rol) 
              => AutoIDs  
              => Seeder => faker random users 
 
-Excepciones => Controllers lvl
+#####Excepciones 
+       Controllers lvl
 
-Middleware => logger => Pino (pino-pretty) con uuid para seguimiento de peticiones
+#####Middleware 
+       logger => Pino (pino-pretty) con uuid para seguimiento de peticiones
