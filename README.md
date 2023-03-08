@@ -13,7 +13,7 @@ El proyecto cuenta con 3 ramas que se detallan a continuacion; la version final 
 
 ## VERSION ARRAY
 
-Caracteristicas:
+#### Caracteristicas:
 
 ##### Pipes 
        => validation (scope => local) class-validator, ParseInt
