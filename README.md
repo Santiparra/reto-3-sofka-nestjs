@@ -15,21 +15,21 @@ El proyecto cuenta con 3 ramas que se detallan a continuacion; la version final 
 
 Caracteristicas:
 
-#####Pipes 
+##### Pipes 
        => validation (scope => local) class-validator, ParseInt
 
-#####Guards 
+##### Guards 
        => Autentificacion =>passport local y sesiones-express
        => Autorizacion    => RBAC Roles (decorador custom para setMetadata)
 
-#####Herramientas 
+##### Herramientas 
              => Hashing => bcrypt
              => Session Serializer (solo id + rol) 
              => AutoIDs  
              => Seeder => faker random users 
 
-#####Excepciones 
+##### Excepciones 
        Controllers lvl
 
-#####Middleware 
+##### Middleware 
        logger => Pino (pino-pretty) con uuid para seguimiento de peticiones
