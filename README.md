@@ -10,8 +10,8 @@ El proyecto cuenta con 3 ramas que se detallan a continuacion; la version final 
 
 -La Rama FRONTEND cuenta con el backend realizada en la rama main más una capa de front realizada con Angular (de momento basica, es solo a modo de practicar conceptos de angular).
 
-----------------------------------
-VERSION ARRAY
+
+##VERSION ARRAY
 
 Caracteristicas:
 
