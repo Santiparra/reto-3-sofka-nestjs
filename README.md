@@ -8,7 +8,7 @@ El proyecto cuenta con 3 ramas que se detallan a continuacion; la version final 
 
 -La rama VERSION-ARRAY comprende es una reimplementacion de la rama main pero con logica de arrays y con nuevas caracteristicas que he ido aprendiendo (lista al pie).
 
--La Rama FRONTEND cuenta con el backend realizada en la rama main más una capa de front realizada con Angular (de momento basica, es solo a modo de practicar conceptos de angular).
+-La Rama FRONTEND cuenta con el backend realizada en la rama main más una capa de front realizada con Angular (de momento basica, es solo a modo de practicar integraciones de nest y angular).
 
 
 ## VERSION ARRAY
